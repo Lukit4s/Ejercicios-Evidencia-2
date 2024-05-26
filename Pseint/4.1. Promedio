@@ -1,1 +1,19 @@
-
+Algoritmo Estudiante_5_Materias
+	
+	Escribir "Esta cursando cinco materias, ingrese la nota de cada una de ellas";
+	Escribir "Ingrese la primera nota";
+	Leer nota1;
+	Escribir "Ingrese la segunda nota";
+	Leer nota2;
+	Escribir "Ingrese la tercera nota";
+	Leer nota3;
+	Escribir "Ingrese la cuarta nota";
+	Leer nota4;
+	Escribir "Ingrese la quinta nota";
+	Leer nota5;
+	
+	suma= nota1+nota2+nota3+nota4+nota5;
+	promedio= suma / 5;
+	Escribir "Su promedio sera de: ",promedio;
+	
+FinAlgoritmo
