@@ -1,0 +1,15 @@
+Algoritmo campeonato_de_futbol
+	
+	Escribir "Puntos acumulados por tu equipo en el campeonato";
+	Escribir "¿Cuantas derrotas tiene?";
+	Leer derrotas;
+	Escribir "¿Cuantas victorias tiene?";
+	Leer victorias;
+	Escribir "¿Cuntos empates tiene?";
+	Leer empates;
+	
+	puntos= empates+victoria*3;
+	
+	Escribir "El puntaje del equipo es de: ", puntos;
+	
+FinAlgoritmo
