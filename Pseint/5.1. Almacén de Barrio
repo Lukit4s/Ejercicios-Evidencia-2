@@ -1,0 +1,57 @@
+Algoritmo almacen_if_Y_Else_Con_logicos
+	
+	valorLeche=1000;
+	
+	Escribir "Si la persona es jubilada, ingrese 0 y si la persona no lo es, ingrese 1";
+	Leer persona;
+	
+	Si persona == 0 O persona == 1 Entonces
+		Escribir "Ingrese la cantidad de leches que el cliente desea comprar";
+		Leer leches;
+			Si leches >= 24 y persona == 0 Entonces
+			desculeche = leches - (leches * 0.25);
+			total= desculeche * valorLeche;
+			Escribir "El total a pagar es de: ",total," pesos";
+		SiNo
+			Si leches >= 12 y persona == 0 Entonces
+				desculeche = leches - (leches * 0.20);
+				total= desculeche * valorLeche;
+				Escribir "El total a pagar es de: ",total," pesos";
+			SiNo
+				Si leches > 0 y persona == 0 Entonces
+					desculeche = leches - (leches * 0.10);
+					total= valorLeche * desculeche;
+					Escribir "El total a pagar es de: ",total," pesos";
+				SiNo
+					Si leches <= 0 y persona == 0 Entonces
+						Escribir "Valor incorrecto, vuelva a ingresar";
+					SiNo
+						Si leches >= 24 y persona == 1 Entonces
+							desculeche = leches - (leches * 0.15);
+							total= desculeche * valorLeche;
+							Escribir "El total a pagar es de: ",total," pesos";
+						SiNo
+							Si leches >= 12 y persona == 1 Entonces
+								desculeche = leches - (leches * 0.10);
+								total= desculeche * valorLeche;
+								Escribir "El total a pagar es de: ",total," pesos";
+							SiNo
+								Si leches > 0 y persona == 1 Entonces
+									total= valorLeche * leches;
+									Escribir "El total a pagar es de: ",total," pesos";
+								SiNo
+									Si leches <= 0 y persona == 1 Entonces
+										Escribir "Valor incorrecto, vuelva a ingresar";
+									Fin Si
+								FinSi
+							Fin Si
+						Fin Si
+					Fin Si
+				Fin Si
+			Fin Si
+		Fin Si
+	SiNo
+		Escribir "Valor incorrecto, vuelva a ingresar";
+		
+	FinSi
+FinAlgoritmo
