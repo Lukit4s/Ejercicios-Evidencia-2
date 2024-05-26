@@ -1,0 +1,19 @@
+Algoritmo profesor_de_matematica_con_While
+	
+		Definir num, i, resultado Como Entero;
+		
+		Escribir "Ingresa un número entre 1 y 10: ";
+		Leer num;
+		
+		Si num >= 1 y num <= 10 Entonces;
+			i = 1;
+			Mientras i <= 10 Hacer;
+				resultado = num * i;
+				Escribir num, " x ", i, " = ", resultado;
+				i = i + 1;
+			FinMientras;
+			Sino
+				Escribir "El número debe estar entre 1 y 10.";
+			FinSi
+			
+FinAlgoritmo
