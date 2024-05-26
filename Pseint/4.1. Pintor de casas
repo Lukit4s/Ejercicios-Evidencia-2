@@ -1,4 +1,5 @@
 Algoritmo mano_de_obra
+
 	Mcuadrado= 2000;
 	Escribir "¿Cuanto mide la pared que desea pintar?";
 	Escribir "Ingrese el ancho";
