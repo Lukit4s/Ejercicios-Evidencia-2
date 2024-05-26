@@ -1,0 +1,18 @@
+Algoritmo nombres_de_Personas
+	
+	Definir nombre Como Cadena;
+    Escribir "Ingresa un nombre";
+    Leer nombre;
+	
+    Mientras nombre <> "fin" Hacer;
+		
+        Escribir "Ingresa otro nombre ( o fin para terminar)";
+        Leer nombre;
+		nombres = nombres + nombre + ", ";
+		
+    Fin Mientras
+	
+	Escribir nombres;
+    Escribir "Fin del programa";
+	
+FinAlgoritmo
