@@ -1,0 +1,12 @@
+Algoritmo mostrar_numero
+	
+    Definir num, i Como Entero;
+	
+    Escribir "Ingrese el número que desea contar: ";
+    Leer num;
+	
+    Para i = 1 Hasta num Con Paso 1 Hacer
+        Escribir i;
+    FinPara
+	
+FinAlgoritmo
