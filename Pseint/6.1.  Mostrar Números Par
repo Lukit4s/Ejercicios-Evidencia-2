@@ -1,0 +1,12 @@
+Algoritmo mostrar_numero_par
+	
+    Definir num, i Como Entero;
+	
+    Escribir "Ingrese el número hasta el cual desea obtener los números pares: ";
+    Leer num;
+	
+    Para i = 0 Hasta num Con Paso 2 Hacer
+        Escribir i;
+    FinPara
+	
+FinAlgoritmo
