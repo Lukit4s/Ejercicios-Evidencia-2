@@ -1,5 +1,5 @@
 Algoritmo profesor_de_matematica_Con_For
-    Definir nume, i, resultado Como Entero;
+    Definir num, i, resultado Como Entero;
 	
     Escribir "Ingresa un número entre 1 y 10: ";
     Leer num;
