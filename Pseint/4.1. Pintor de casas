@@ -1,0 +1,15 @@
+Algoritmo mano_de_obra
+	Mcuadrado= 2000;
+	Escribir "¿Cuanto mide la pared que desea pintar?";
+	Escribir "Ingrese el ancho";
+	Leer ancho;
+	Escribir "Ingrese el alto";
+	Leer alto;
+	
+	pared=  ancho * alto;
+	costo= Mcuadrado * pared;
+	
+	Escribir "El costo del trabajo seria de: ",costo," pesos";
+	
+	
+FinAlgoritmo
