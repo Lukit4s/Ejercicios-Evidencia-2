@@ -1,0 +1,37 @@
+Algoritmo calcular_promedio_y_rendimiento
+	
+		Definir cantidad_alumnos, nota,i , total_notas, promedio Como Real;
+		Definir rendimiento Como Cadena;
+		
+		Escribir "Ingrese la cantidad de alumnos que rindieron el examen: ";
+		Leer cantidad_alumnos;
+		total_notas = 0;
+		
+		Para i = 1 Hasta cantidad_alumnos Hacer
+			
+			Escribir "Ingrese la nota del alumno ", i, " (entre 0 y 10): ";
+			Leer nota;
+			Si nota >= 0 y nota <= 10 Entonces
+				total_notas = total_notas + nota;
+			SiNo
+				Escribir "La nota debe estar entre 0 y 10. Intente nuevamente.";
+			FinSi
+			
+		FinPara
+		
+		promedio = total_notas / cantidad_alumnos;
+		
+		Si promedio > 8 Entonces;
+			rendimiento = "elevado";
+		Sino Si promedio >= 6 y promedio <= 8 Entonces;
+				rendimiento = "aceptable";
+			Sino
+				rendimiento = "bajo";
+			FinSi
+			
+			Escribir "El promedio de notas es: ", promedio;
+			Escribir "El rendimiento es: ", rendimiento;
+			
+		FinSi
+		
+finAlgoritmo
